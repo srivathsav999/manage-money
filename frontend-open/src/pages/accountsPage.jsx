@@ -26,7 +26,10 @@ const AccountsPage = () => {
                             </p>
                         </div>
                         <div className="accounts-actions">
-                            <button onClick={handleAddAccountClick} className="action-button primary-button">
+                            <button
+                                onClick={handleAddAccountClick}
+                                className="action-button primary-button"
+                            >
                                 <span>➕</span> Add Account
                             </button>
                             <button className="action-button secondary-button">
@@ -41,10 +44,8 @@ const AccountsPage = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
         </>
     );
 };
 
 export default AccountsPage;
-
