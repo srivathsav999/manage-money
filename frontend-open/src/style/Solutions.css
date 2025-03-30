@@ -1,0 +1,146 @@
+.solutions-container {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 90px 0px 0px 100px;
+}
+
+.solutions-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.solutions-header h1 {
+    font-size: 36px;
+    color: #1e293b;
+    margin-bottom: 16px;
+}
+
+.solutions-header p {
+    font-size: 18px;
+    color: #64748b;
+}
+
+.solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.solution-card {
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease;
+}
+
+.solution-card:hover {
+    transform: translateY(-5px);
+}
+
+.solution-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.solution-card h2 {
+    font-size: 24px;
+    color: #1e293b;
+    margin-bottom: 12px;
+}
+
+.solution-card p {
+    color: #64748b;
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+.benefits-list {
+    margin-bottom: 24px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    color: #1e293b;
+}
+
+.check-icon {
+    color: #16a34a;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.explore-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.explore-btn:hover {
+    opacity: 0.9;
+}
+
+.contact-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 16px;
+    margin-top: 40px;
+}
+
+.contact-section h2 {
+    font-size: 28px;
+    color: #1e293b;
+    margin-bottom: 16px;
+}
+
+.contact-section p {
+    color: #64748b;
+    margin-bottom: 24px;
+}
+
+.contact-btn {
+    padding: 14px 32px;
+    background: #1e293b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background: #0f172a;
+}
+
+@media (max-width: 768px) {
+    .solutions-container {
+        padding: 20px;
+    }
+
+    .solutions-header h1 {
+        font-size: 28px;
+    }
+
+    .solutions-header p {
+        font-size: 16px;
+    }
+
+    .solutions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-section {
+        padding: 40px 20px;
+    }
+}

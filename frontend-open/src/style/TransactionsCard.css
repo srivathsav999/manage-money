@@ -1,0 +1,206 @@
+.transactions-card {
+    padding: 30px;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    max-width: 1000px;
+    margin: 85px 60px 60px;
+    transition: transform 0.3s ease;
+}
+
+.transactions-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.card-title {
+    font-size: 24px;
+    color: #1e293b;
+    font-weight: 700;
+    margin: 0;
+}
+
+.table-container {
+    margin-top: 25px;
+    overflow-x: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.transactions-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: white;
+}
+
+.transactions-table th {
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 16px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.transactions-table th:first-child {
+    border-top-left-radius: 12px;
+}
+
+.transactions-table th:last-child {
+    border-top-right-radius: 12px;
+}
+
+.transactions-table td {
+    padding: 16px;
+    font-size: 14px;
+    color: #4a5568;
+    border-bottom: 1px solid #e2e8f0;
+    transition: background-color 0.3s ease;
+}
+
+.transactions-table tr:last-child td {
+    border-bottom: none;
+}
+
+.transactions-table tr:last-child td:first-child {
+    border-bottom-left-radius: 12px;
+}
+
+.transactions-table tr:last-child td:last-child {
+    border-bottom-right-radius: 12px;
+}
+
+.transactions-table tbody tr {
+    transition: all 0.3s ease;
+}
+
+.transactions-table tbody tr:hover {
+    background-color: #f8fafc;
+    transform: translateX(5px);
+}
+
+.amount-cell {
+    font-family: 'SF Mono', 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+.amount-cell.positive {
+    color: #10b981;
+}
+
+.amount-cell.negative {
+    color: #ef4444;
+}
+
+.category-cell {
+    font-weight: 500;
+}
+
+.category-badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.category-badge.receivables {
+    background-color: #d1fae5;
+    color: #10b981;
+}
+
+.category-badge.payables {
+    background-color: #fee2e2;
+    color: #ef4444;
+}
+
+.description-cell {
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.add-transaction-button {
+    margin-top: 25px;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.2);
+}
+
+.add-transaction-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.3);
+}
+
+.add-transaction-button:active {
+    transform: translateY(0);
+}
+
+.loading-message {
+    padding: 40px;
+    text-align: center;
+    color: #6366f1;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.loading-spinner {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #6366f1;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .transactions-card {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .card-header {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .transactions-table th,
+    .transactions-table td {
+        padding: 12px;
+        font-size: 13px;
+    }
+
+    .description-cell {
+        max-width: 150px;
+    }
+}

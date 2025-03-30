@@ -1,0 +1,289 @@
+.company-container {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 90px 0px 0px 100px;
+}
+
+.hero-section {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    color: #1e293b;
+    margin-bottom: 24px;
+}
+
+.hero-text {
+    font-size: 20px;
+    color: #64748b;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-right: 600px;
+}
+
+.mission-section {
+    margin-bottom: 80px;
+}
+
+.mission-content {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.mission-content h2 {
+    font-size: 36px;
+    color: #1e293b;
+    margin-bottom: 20px;
+}
+
+.mission-content p {
+    font-size: 18px;
+    color: #64748b;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.value-card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+}
+
+.value-card span {
+    font-size: 40px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.value-card h3 {
+    font-size: 24px;
+    color: #1e293b;
+    margin-bottom: 12px;
+}
+
+.value-card p {
+    color: #64748b;
+}
+
+.timeline-section {
+    margin-bottom: 80px;
+}
+
+.timeline-section h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #1e293b;
+    margin-bottom: 40px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: #e2e8f0;
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.timeline-year {
+    width: 100px;
+    text-align: right;
+    padding-right: 30px;
+    font-weight: bold;
+    color: #6366f1;
+}
+
+.timeline-content {
+    flex: 1;
+    max-width: 400px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background: #6366f1;
+    border-radius: 50%;
+}
+
+.timeline-content h3 {
+    font-size: 20px;
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.timeline-content p {
+    color: #64748b;
+}
+
+.team-section {
+    margin-bottom: 80px;
+}
+
+.team-section h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #1e293b;
+    margin-bottom: 40px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.team-card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.member-image {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.team-card h3 {
+    font-size: 24px;
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.member-role {
+    color: #6366f1;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.team-card p {
+    color: #64748b;
+}
+
+.careers-section {
+    text-align: center;
+    padding: 60px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 16px;
+    margin-bottom: 40px;
+}
+
+.careers-section h2 {
+    font-size: 36px;
+    color: #1e293b;
+    margin-bottom: 20px;
+}
+
+.careers-section p {
+    color: #64748b;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.view-positions-btn {
+    padding: 14px 32px;
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.view-positions-btn:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .company-container {
+        padding: 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 36px;
+    }
+
+    .hero-text {
+        font-size: 18px;
+        margin-right: 0;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .timeline-year {
+        text-align: left;
+        padding-right: 0;
+        padding-left: 40px;
+        margin-bottom: 10px;
+    }
+
+    .timeline-content {
+        padding-left: 40px;
+    }
+
+    .timeline-content::before {
+        left: 14px;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .careers-section {
+        padding: 40px 20px;
+    }
+}
